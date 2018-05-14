@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "454827422319",
+    "firebase_url": "https://autenticacaofirebase-1df75.firebaseio.com",
+    "project_id": "autenticacaofirebase-1df75",
+    "storage_bucket": "autenticacaofirebase-1df75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454827422319:android:6cf7b067eb1e80ff",
+        "android_client_info": {
+          "package_name": "autenticacaousuario.leandro.com.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454827422319-pekkv4mhqs2v67ibaj33onj3b9a48it8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "autenticacaousuario.leandro.com.br",
+            "certificate_hash": "2a1a8be7d4a91a371dc082078b363ad2a58af93f"
+          }
+        },
+        {
+          "client_id": "454827422319-4001pojffq3f55adqjuscgh34aia7pjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFQFML-oLIi19sY2eKUE7PpRdQDQC1TPs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454827422319-4001pojffq3f55adqjuscgh34aia7pjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
