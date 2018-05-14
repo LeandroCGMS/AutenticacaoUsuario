@@ -25,18 +25,26 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         //Login de usuário
-        firebaseAuth.signInWithEmailAndPassword("leandro.curso@gmail.com","leandro123")
-            .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()) {//Sucesso ao cadastrar usuário
-                        Log.i("signIn","Sucesso ao logar usuário.");
-                    } else {//Erro ao cadastrar usuáriop
-                        Log.i("signIn","Erro ao logar usuário." + task.getException());
+        /*firebaseAuth.signInWithEmailAndPassword("leandro.curso@gmail.com", "leandro123")
+                .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {//Sucesso ao cadastrar usuário
+                            Log.i("signIn", "Sucesso ao logar usuário.");
+                        } else {//Erro ao cadastrar usuáriop
+                            Log.i("signIn", "Erro ao logar usuário." + task.getException());
 
+                        }
                     }
-                }
-            });
+                });*/
+
+        firebaseAuth.signOut();
+
+        if (firebaseAuth.getCurrentUser() != null) {
+            Log.i("verificaUsuario","Usuário está logado.");
+        } else {
+            Log.i("verificaUsuario","Usuário não está logado.");
+        }
 
         //Cadastro
         /*firebaseAuth.createUserWithEmailAndPassword("leandro.curso@gmail.com",
